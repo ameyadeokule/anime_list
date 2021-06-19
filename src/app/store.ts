@@ -1,9 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import homePageSlice from './container/HomePage/homePageSlice'
 
 
 export const store = configureStore({
   reducer: {
-   
+      homePage: homePageSlice
   },
 });
 
